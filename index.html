@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="/src/style.css">
     <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <article id ="groceries">
+    <article id="groceries">
         <header class="groceries__header">Grocery List</header>
         <ul id="grocery-list">
             <li>Milk</li>
@@ -18,12 +20,14 @@
             <li>Nachos</li>
             <li>Beer</li>
             <li>Gold Bars</li>
-            <li><form>
-                <input type="text" placeholder="Any more items?" class="new-item">
-                <button type="button" class="add-item" onclick="return addItem();">Add Item!</button>
-            </form></li>
+
         </ul>
+        <form>
+            <input type="text" placeholder="Any more items?" class="new-item">
+            <button type="button" class="add-item" onclick="return addItem();">Add Item!</button>
+        </form>
     </article>
     <script src="src/main.js"></script>
 </body>
+
 </html>

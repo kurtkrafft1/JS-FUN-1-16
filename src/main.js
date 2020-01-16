@@ -21,13 +21,13 @@ const groceriesHeader = document.querySelector('.groceries__header');
 // groceriesHeader.classList.remove("groceries__header");
 
 
-const groceryList = document.querySelectorAll('#grocery-list li');
-console.log(groceryList);
-for (let i=0; i<groceryList.length; i++){
-    if (i===1){
-    groceryList[i].classList.add("groceries__header");
-}
-}
+// const groceryList = document.querySelectorAll('#grocery-list li');
+// console.log(groceryList);
+// for (let i=0; i<groceryList.length; i++){
+//     if (i===1){
+//     groceryList[i].classList.add("groceries__header");
+// }
+// }
 
 
 const addedFood = []
@@ -36,10 +36,14 @@ const addItem = () => {
     addedFood.unshift(newFood);
     // console.log(addedFood)
     for (let i=0; i<1; i++){
-        let newLI = document.body.createElement('LI');
-        const newHTML =`${addedFood[i]}`;
-        newLI.innerHTML = newHTML;
+        const list = document.querySelector('#grocery-list');
+        const newHTML = `${addedFood[i]}`
+        const entry = document.createElement('li');
+        entry.appendChild(document.createTextNode(newHTML));
+        list.appendChild(entry);
+
     
     }
 
 }
+

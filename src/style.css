@@ -22,3 +22,10 @@ body {
 .new-text {
     font-family: 'Gayathri', sans-serif;
 }
+li {
+    transition: ease .3s;
+}
+li:hover {
+    font-size: 2em;
+    transition: ease .3s;
+}
