@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to left, rgb(43,43,43), rgba(43,43,43,0.5));
+    /* background-color: aliceblue; */
+    color: whitesmoke;
+}
+
+.groceries__header {
+    font-size: 5em;
+  ;
+    
+}
+#grocery-list {
+    list-style-type: none;
+}
+#groceries {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-text {
+    font-family: 'Gayathri', sans-serif;
+}
